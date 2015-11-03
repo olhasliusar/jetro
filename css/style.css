@@ -5367,16 +5367,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ba-contact-us form [type="text"],
+.ba-contact-us form [type="email"],
+.ba-contact-us form textarea {
+  padding-left: 14px;
+  line-height: 18px;
+}
+
+.ba-contact-us form [type="text"],
 .ba-contact-us form [type="email"] {
   width: 217px;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  padding-left: 14px;
 }
 
 .ba-contact-us form textarea {
-  padding-top: 15px;
+  padding-top: 12px;
   color: #e8663c;
   height: 205px;
-  padding-left: 14px;
 }

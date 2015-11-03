@@ -467,20 +467,25 @@ h1,h2,h3,h4,h5,h6{
 	}
 
 	form{
+		[type="text"],
+		[type="email"],
+		textarea{
+			padding-left: 14px;
+			line-height: 18px;
+		}
 
 		[type="text"],
 		[type="email"]{
 			width: 217px;
 			margin-bottom: 10px;
 			padding-bottom: 5px;
-			padding-left: 14px;
+
 		}
 
 		textarea{
-			padding-top: 15px;
+			padding-top: 12px;
 			color: $primary-color;
 			height: 205px;
-			padding-left: 14px;
 		}
 	}
 }
