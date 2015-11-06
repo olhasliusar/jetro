@@ -226,7 +226,7 @@ $h2-font-size: rem-calc(18);
 $h3-font-size: rem-calc(16);
 // $h4-font-size: rem-calc(15);
 $h5-font-size: rem-calc(14);
-// $h6-font-size: 1rem;
+$h6-font-size: rem-calc(12);
 
 // We use these to control header size reduction on small screens
 $h1-font-reduction: 0;
@@ -982,7 +982,7 @@ $orbit-caption-padding: rem-calc(20);
 // $pagination-link-current-background: $primary-color;
 // $pagination-link-current-font-color: $white;
 // $pagination-link-current-font-weight: $font-weight-bold;
-// $pagination-link-current-cursor: default;
+$pagination-link-current-cursor: pointer;
 // $pagination-link-current-active-bg: $primary-color;
 
 // 21. Panels

@@ -2516,6 +2516,80 @@ button::-moz-focus-inner {
   }
 }
 
+ul.pagination {
+  display: block;
+  margin-left: -0.3125rem;
+  min-height: 1.5rem;
+}
+
+ul.pagination li {
+  color: #222222;
+  font-size: 0.875rem;
+  height: 1.5rem;
+  margin-left: 0.3125rem;
+}
+
+ul.pagination li a, ul.pagination li button {
+  border-radius: 3px;
+  transition: background-color 300ms ease-out;
+  background: none;
+  color: #999999;
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: inherit;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+}
+
+ul.pagination li:hover a,
+ul.pagination li a:focus,
+ul.pagination li:hover button,
+ul.pagination li
+button:focus {
+  background: #e6e6e6;
+}
+
+ul.pagination li.unavailable a, ul.pagination li.unavailable button {
+  cursor: default;
+  color: #999999;
+  pointer-events: none;
+}
+
+ul.pagination li.unavailable:hover a,
+ul.pagination li.unavailable a:focus,
+ul.pagination li.unavailable:hover button,
+ul.pagination li.unavailable button:focus {
+  background: transparent;
+}
+
+ul.pagination li.current a, ul.pagination li.current button {
+  background: #e8663c;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul.pagination li.current a:hover,
+ul.pagination li.current a:focus, ul.pagination li.current button:hover,
+ul.pagination li.current button:focus {
+  background: #e8663c;
+}
+
+ul.pagination li {
+  display: block;
+  float: left;
+}
+
+/* Pagination centred wrapper */
+.pagination-centered {
+  text-align: center;
+}
+
+.pagination-centered ul.pagination li {
+  display: inline-block;
+  float: none;
+}
+
 .sub-nav {
   display: block;
   margin: 0;
@@ -4115,7 +4189,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .subheader {
@@ -4334,7 +4408,7 @@ blockquote p {
     font-size: 0.875rem;
   }
   h6 {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -4843,6 +4917,10 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: 3px;
 }
 
+.ba-relative {
+  position: relative;
+}
+
 .top-bar .name h1 a {
   color: #e8663c;
   padding: 0;
@@ -5079,8 +5157,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 10px;
 }
 
-.ba-socials__item:hover {
-  opacity: .7;
+.ba-socials__item:hover img {
+  transform: scale(1.2);
 }
 
 .ba-title {
@@ -5232,6 +5310,139 @@ h1, h2, h3, h4, h5, h6 {
 .ba-aside .ba-photo-gallery .row .columns {
   padding-left: 3px;
   padding-right: 3px;
+}
+
+/*Blog*/
+.ba-post .ba-slide {
+  padding-bottom: 0;
+}
+
+.ba-post__content {
+  padding-top: 20px;
+  color: #bababa;
+}
+
+.ba-post__content h6 {
+  margin-bottom: 0;
+}
+
+.ba-post__content time {
+  font-size: 12px;
+}
+
+.ba-post__content p {
+  margin-top: 4px;
+  margin-bottom: 13px;
+}
+
+.ba-post__content a {
+  color: #bababa;
+}
+
+.ba-post__main-information {
+  color: #414141;
+}
+
+.ba-post hr {
+  height: 13px;
+  background: url(../img/bg-square.png) repeat-x;
+}
+
+.ba-post__media {
+  display: block;
+}
+
+.ba-post-blockquote {
+  font-size: 13px;
+}
+
+.ba-post-blockquote .ba-blockquote {
+  border: none;
+  padding: 20px 15px 20px 77px;
+  color: #474747;
+  font-style: italic;
+  background-color: whitesmoke;
+}
+
+.ba-post-blockquote p {
+  color: #e8663c;
+  font-size: 72px;
+  line-height: 72px;
+  padding-top: 13px;
+  float: left;
+  font-family: Georgia;
+  padding-left: 33px;
+}
+
+.ba-post-link h2 {
+  margin: 0;
+}
+
+.ba-post-link a {
+  display: block;
+  color: #a0a0a0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 17px;
+}
+
+.ba-post .ba-quotes {
+  display: none;
+}
+
+@media only screen and (min-width: 64.063em) {
+  .ba-post .ba-post__main-information {
+    padding-left: 35px;
+  }
+  .ba-post .ba-post__content,
+  .ba-post-blockquote,
+  .ba-post-link {
+    padding-right: 40px;
+  }
+  .ba-post__icon {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background: #e8663c;
+    line-height: 75px;
+    text-align: center;
+    position: absolute;
+    left: -75px;
+  }
+  .ba-post__icon .ba-quotes {
+    display: inline;
+    padding-left: 23px;
+    color: #FFF;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .ba-post hr {
+    margin-top: 35px;
+    margin-bottom: 57px;
+  }
+}
+
+.ba-number-of-page {
+  padding-bottom: 45px;
+}
+
+ul.pagination li a,
+ul.pagination li button {
+  border-radius: 0;
+  background: #f4b39e;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Bebas", Helvetica, Arial, sans-serif;
+  padding-top: 6px;
+  width: 26px;
+  height: 26px;
+}
+
+ul.pagination li a:hover,
+ul.pagination li button:hover {
+  background: #e8663c;
 }
 
 /*portfolio*/
