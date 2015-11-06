@@ -5294,6 +5294,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.ba-aside ul a:hover {
+  color: #e8663c;
+}
+
 .ba-aside__link_img {
   display: inline-block;
   width: 100%;
